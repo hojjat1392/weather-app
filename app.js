@@ -27,6 +27,6 @@ request({ url: challReq, json: true }, (error, response) => {
     } else {
       const result = response.body[0];
       console.log(`The City name is ${result.name}`);
-      console.log(`The Coordinate lat: ${result.lat} long: ${result.long}`);
+      console.log(`The Coordinate lat: ${result.lat} long: ${result.lon}`);
     }
 });
